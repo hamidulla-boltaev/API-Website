@@ -60,19 +60,17 @@
     height: 50px;
     border-radius: 7px;
   }
+
+  .currency option {
+      font-weight: 400;
+  }
   
   .rate {
     color: black;
     font-size: 25px;
     padding-top: 15px;
   }
-  
-  /* select:focus,
-  input:focus,
-  button:focus {
-    outline: 0; */
-  }
-  
+   
   @media (max-width: 600px) {
     .currency input {
       width: 350px;
