@@ -1,78 +1,65 @@
-:root {
-    color: black;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 135, 206, 0.7) ), url(https://i2.wp.com/www.smartertravel.com/wp-content/uploads/2020/02/bank-notes-cash-currency-scaled-e1582061318236.jpg?resize=1400%2C500&ssl=1);;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  h1 {
-    color: black;
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 35px;
-  }
-  
-  .btn {
-    color: white;
-    background-color: blue;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 10px 20px;
-    width: 100%;
-    border: none;
-    height: 55px;
-  }
-  
-  .btn:hover {
-    box-shadow: 5px 10px #888888;
-    transform: scale(1.1);
-  }
-  
-  .currency {
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .currency select {
-    padding: 10px 10px 10px 10px;
-    appearance: none;
-    border: 1px solid;
-    font-size: 15px;
-    border-radius: 12px;
-    height: 50px;
-    width: 95px;
-  }
-  
-  .currency input {
-    font-size: 30px;
-    text-align: left;
-    height: 50px;
-    border-radius: 7px;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .currency option {
-      font-weight: 400;
+body {
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 135, 206, 0.7)
+    ),
+    url(https://i2.wp.com/www.smartertravel.com/wp-content/uploads/2020/02/bank-notes-cash-currency-scaled-e1582061318236.jpg?resize=1400%2C500&ssl=1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fafafa;
+  font-size: 55px;
+}
+h2 {
+  color: #fafafa;
+  font-size: 35px;
+}
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  appearance: none;
+  border: 1px solid;
+  font-size: 25px;
+  border-radius: 12px;
+  height: 50px;
+  width: 95px;
+}
+
+.currency input {
+  font-size: 30px;
+  text-align: left;
+  height: 50px;
+  border-radius: 7px;
+}
+
+.rate {
+  color: #fff;
+  font-size: 35px;
+  padding-top: 15px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 350px;
   }
-  
-  .rate {
-    color: black;
-    font-size: 25px;
-    padding-top: 15px;
-  }
-   
-  @media (max-width: 600px) {
-    .currency input {
-      width: 350px;
-    }
-  }
+}

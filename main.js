@@ -4,10 +4,8 @@ const currencies_two = document.getElementById("currency-two");
 const amounts_two = document.getElementById("amount-two");
 
 const rateEl = document.getElementById("rate");
-const button = document.getElementById("button");
-
 function calculate() {
-  const KEY_API = "3440990f97e6a51ec8bbcb28";
+  const KEY_API = "bb995f49de04e6d9a766d543";
   const currencyOne = currencies_one.value;
   const currencyTwo = currencies_two.value;
   const amountOne = amounts_one.value;
@@ -21,7 +19,7 @@ function calculate() {
       console.log(rate);
     });
 }
-
+//Event Listeners
 currencies_one.addEventListener("change", calculate);
 amounts_one.addEventListener("input", calculate);
 currencies_two.addEventListener("change", calculate);
